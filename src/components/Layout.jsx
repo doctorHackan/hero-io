@@ -1,4 +1,5 @@
 import { Outlet } from 'react-router-dom'
+import { Toaster } from 'react-hot-toast'
 import Footer from './Footer'
 import Header from './Header'
 
@@ -9,6 +10,7 @@ function Layout() {
       <main className="site-main">
         <Outlet />
       </main>
+      <Toaster position="top-right" />
       <Footer />
     </div>
   )
