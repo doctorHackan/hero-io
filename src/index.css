@@ -142,24 +142,65 @@ img {
 
 .site-footer {
   border-top: 1px solid #e2e8f0;
-  background: #fff;
+  background: #0f172a;
+  color: #cbd5e1;
 }
 
 .footer-inner {
-  min-height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  color: #475569;
+  min-height: 240px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  align-items: start;
+  padding: 2rem 0;
 }
 
-.footer-inner h3 {
-  margin: 0 0 0.5rem;
-  color: #0f172a;
+.footer-section h3 {
+  margin: 0 0 0.75rem;
+  color: #fff;
+  font-size: 1.1rem;
 }
 
-.footer-inner p {
+.footer-section h4 {
+  margin: 0 0 0.75rem;
+  color: #e2e8f0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.footer-section p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #2563eb;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  padding: 1.5rem 0;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.footer-bottom p {
   margin: 0;
 }
 
@@ -426,9 +467,9 @@ img {
   }
 
   .footer-inner {
-    padding: 1rem 0;
-    flex-direction: column;
-    text-align: center;
+    grid-template-columns: 1fr;
+    padding: 1.5rem 0;
+    gap: 1.5rem;
   }
 
   .hero-actions {
